@@ -1,0 +1,14 @@
+# Environments
+.env
+
+# Jupyter and Python caches
+.ipynb_checkpoints
+__pycache__/
+*.pyc
+
+# Local Data
+chroma_db/
+
+# Temporary or test
+test_imports.py
+*.ipynb
