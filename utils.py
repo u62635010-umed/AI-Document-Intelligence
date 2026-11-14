@@ -67,11 +67,11 @@ def process_pdf(pdf_path):
     if not groq_api_key:
         raise ValueError("Groq_API_KEY not found in .env file")
         
-    llm = ChatGroq(
-        model="llama-3.1-8b-instant", 
-        temperature=0,
-        groq_api_key=groq_api_key
-    )
+   llm = ChatGroq(
+    model="llama-3.3-70b-versatile",
+    temperature=0,
+    groq_api_key=groq_api_key
+)
     
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,
