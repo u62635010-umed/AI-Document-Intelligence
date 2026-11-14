@@ -82,7 +82,7 @@ def process_pdf(pdf_path):
         )
 
     llm = ChatGroq(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-20b",
         temperature=0,
         groq_api_key=groq_api_key
     )
